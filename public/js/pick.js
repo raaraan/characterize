@@ -10,23 +10,45 @@ $(document).ready(function() {
 function changeImage(e){
 	e.preventDefault();
 	console.log("hello");
-	var randInt = Math.floor(Math.random() * (2-1+1)) + 1;
+	var randInt = Math.floor(Math.random() * (6-1+1)) + 1;
 	console.log(randInt);
 	var image;
+	var title;
 	switch(randInt){
 		case 1:
 			image = "/images/racoon.png";
+			title = "Remus the Raccoon";
 			break;
 		case 2:
 			image = "/images/sas.png";
+			title = "Sasquatch";
 			break;
-		//document.getElementById("tools_sketch").style.background = "url(/images/logo.png)";
+		case 3:
+			image = "/images/rat.png";
+			title = "Emile the rat";
+			break;
+		case 4:
+			image = "/images/man.png";
+			title = "Bob the businessman";
+			break;
+		case 5:
+			image = "/images/pirate.png";
+			title = "Pete the pirate";
+			break;
+		case 6:
+			image = "/images/madsci.png";
+			title = "McMillius the mad scientist";
+			break;
 	}
 	var canvas = document.getElementById("tools_sketch")
-	canvas.style.background = "url(/images/racoon.png)";
 	var context = canvas.getContext("2d");
 	context.clearRect(0,0, canvas.width, canvas.height);
-	//canvas.style.background = "url(" + image + ")";
+	canvas.style.background = "url(" + image + ") no-repeat center center";
+
+	var element=document.getElementById("title-1");
+	element.innerHTML= title;
+
+	//$("title-1").text("hello");
 }
 
 /*

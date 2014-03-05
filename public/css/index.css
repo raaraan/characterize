@@ -15,3 +15,7 @@ label{
   color:#4EC6DE;
   
 }
+
+#image{ position:relative; }
+#button{ position:absolute; top: 590px; left:970px; z-index:10; }
+#fb{ position:absolute; top: 640px; left:980px; z-index:10; }
