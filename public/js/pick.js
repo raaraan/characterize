@@ -40,15 +40,12 @@ function changeImage(e){
 			title = "McMillius the mad scientist";
 			break;
 	}
-	var canvas = document.getElementById("tools_sketch")
-	var context = canvas.getContext("2d");
-	context.clearRect(0,0, canvas.width, canvas.height);
+
+	var canvas = document.getElementById("tools_sketch");
 	canvas.style.background = "url(" + image + ") no-repeat center center";
 
 	var element=document.getElementById("title-1");
 	element.innerHTML= title;
-
-	//$("title-1").text("hello");
 }
 
 /*

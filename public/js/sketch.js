@@ -176,4 +176,19 @@ var __slice = Array.prototype.slice;
       return this.context.globalCompositeOperation = oldcomposite;
     }
   };
-})(jQuery);
+})(jQuery);var __slice = Array.prototype.slice;
+if($('.jumbotron:visible')){
+                $(function() {
+                        var sktch = $('#tools_sketch').sketch();
+                        var cleanCanvas = $('#tools_sketch')[0];
+                        
+                        $('button.redirect-movie').click(function(){
+                            sktch.sketch().actions = [];
+                            var myCanvas = document.getElementById("tools_sketch");
+                            var ctx = myCanvas.getContext('2d');
+                            
+                            ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+                        });
+                });
+                
+            }
