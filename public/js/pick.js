@@ -35,7 +35,7 @@ function changeImage(e){
 		case 3:
 		randInt = 4;
 			image = "/images/rat.png";
-			title = "Emile the rat";
+			title = "Emile the erudite rat";
 			break;
 		case 4:
 		randInt = 5;
