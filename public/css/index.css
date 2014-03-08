@@ -17,5 +17,5 @@ label{
 }
 
 #image{ position:relative; }
-#button{ position:absolute; top: 590px; left:970px; z-index:10; }
-#fb{ position:absolute; top: 640px; left:980px; z-index:10; }
+#button{ position:absolute; top: 80%; left:85%; z-index:10; }
+#fb{ position:absolute; top: 87%; left:85%; z-index:10; }
