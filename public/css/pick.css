@@ -1,7 +1,7 @@
 body{
   background: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 300;
 }
 .jumbotron{
   background:#000000;
@@ -14,4 +14,44 @@ body{
 label{
   color:#4EC6DE;
   
+}
+
+.btnPeople { 
+    background-image: url(/css/images/people.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 239px;
+    height: 340px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.btnAnimals { 
+    background-image: url(/css/images/animals.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 239px;
+    height: 340px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.btnOther { 
+    background-image: url(/css/images/other.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 239px;
+    height: 340px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.btnShapes { 
+    background-image: url(/css/images/shapes.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 239px;
+    height: 340px;
+    cursor: pointer;
+    outline: 0;
 }
