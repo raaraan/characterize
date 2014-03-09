@@ -20,16 +20,25 @@
 	<div class="container">
 			<h2 id="title-1">Bob the businessman</h2>
 
-		<button class="btn btn-default get-started" id="6">Start over</button>
+		<button class="btn btn-default get-started" id="6" style="margin-right: 60px">Start over</button>
 		<button class="btn btn-default redirect-movie" id="7">Next!</button>
 
-		<div class="tools">
-		  <a href="#tools_sketch" data-tool="marker">Marker</a>
-		  <a href="#tools_sketch" data-tool="eraser">Eraser</a>
+		<div class="marker">
+		  <a href="#tools_sketch" data-tool="marker">
+		  	<img src = "/images/pencil-icon.png" width="5%" height="5%" style="margin-top: 10px">
+		  </a>
+		</div>
+		<div class="eraser">
+		  <a href="#tools_sketch" data-tool="eraser">
+		  	<img src = "/images/eraser-icon.png" width="5%" height="5%" style="margin-top: 20px">
+		  </a>
+		</div>
 
+		<div class="tools">
 		  <a href="#tools_sketch" data-download="png" style="float: right; width: 100px;">Download</a>
 		  <a href="#tools_sketch" style="float: right; width: 100px;">Share</a>
 		</div>
+
 		<canvas id="tools_sketch" width="800" height="600" style="background: url(/images/man.png) no-repeat center center;"></canvas>
 
 		<script type="text/javascript">

@@ -189,6 +189,27 @@ if($('.jumbotron:visible')){
                             
                             ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
                         });
+                        $('button.redirect-animal').click(function(){
+                            sktch.sketch().actions = [];
+                            var myCanvas = document.getElementById("tools_sketch");
+                            var ctx = myCanvas.getContext('2d');
+                            
+                            ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+                        });
+                        $('button.redirect-other').click(function(){
+                            sktch.sketch().actions = [];
+                            var myCanvas = document.getElementById("tools_sketch");
+                            var ctx = myCanvas.getContext('2d');
+                            
+                            ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+                        });       
+                        $('button.redirect-shape').click(function(){
+                            sktch.sketch().actions = [];
+                            var myCanvas = document.getElementById("tools_sketch");
+                            var ctx = myCanvas.getContext('2d');
+                            
+                            ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+                        });                                         
                 });
                 
             }
