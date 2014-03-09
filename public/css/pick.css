@@ -59,18 +59,15 @@ form{
 }
 
 #marker {
-  position: absolute;
-  left: 75px;
-  z-index: 2;
+  vertical-align:top;
 }
 
-#eraser {
-  position: absolute;
-  left: 75px;
-  z-index: 2;
+#eraser { 
+  display:inline-block;
+  vertical-align:top;
 }
 
 #tools_sketch {
   margin-top: -130px;
-  margin-left: 50px;
+  margin-left: 70px;
 }
