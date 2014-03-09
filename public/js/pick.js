@@ -4,20 +4,36 @@
 $(document).ready(function() {
 	initializePage();
 	$('button.redirect-movie').click(changeImage);
+	$('button.redirect-animal').click(changeAnimal);
 })
 
-var images = [
-		"/images/racoon.png",
-		"/images/sas.png"
-	];
 
-	var randInt=1;
+
+var randInt=1;
+var randIntAnimal=1;
+
+function changeAnimal(e){
+	e.preventDefault();
+	var image;
+	var title;
+	switch(randIntAnimal){
+		case 1:
+			randIntAnimal = 2;
+			image = "/images/racoon.png";
+			title = "Remus the Raccoon";
+			break;
+	}
+	var canvas = document.getElementById("tools_sketch");
+	canvas.style.background = "url(" + image + ") no-repeat center center";
+
+	var element=document.getElementById("title-1");
+	element.innerHTML= title;
+}
 
 
 function changeImage(e){
 	e.preventDefault();
 	console.log("hello");
-	//var randInt = Math.floor(Math.random() * (6-1+1)) + 1;
 	console.log(randInt);
 	var image;
 	var title;

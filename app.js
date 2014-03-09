@@ -5,6 +5,9 @@ var handlebars = require('express3-handlebars')
 
 var clip = require('./routes/clip.js')
 var rate = require('./routes/rate.js')
+var animal= require('./routes/animal.js')
+var other= require('./routes/other.js')
+var shape= require('./routes/shape.js')
 
 var app = express();
 app.set('port', process.env.PORT || 3000);
@@ -37,9 +40,27 @@ app.post('/start', function(req, res) {
 	res.redirect('/clip')
 });
 
+app.post('/start-animals', function(req, res) {
+	res.redirect('/animal')
+});
+
+app.post('/start-other', function(req, res) {
+	res.redirect('/other')
+});
+
+app.post('/start-shapes', function(req, res) {
+	res.redirect('/shape')
+});
+
 app.get('/clip', clip.test);
 
-app.get('/rate', rate.rate)
+app.get('/rate', rate.rate);
+
+app.get('/animal', animal.test);
+
+app.get('/other', other.test);
+
+app.get('/shape', shape.test);
 
 app.get('/done', function(req, res) {
 	res.render('done')

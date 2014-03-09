@@ -8,14 +8,16 @@ body{
   padding-top:18px;
   padding-bottom:18px;
 }
-.jumbotron h1{
+.jumbotron h3{
   color:#FFFFFF;
 }
 label{
-  color:#4EC6DE;
-  
+  color:#4EC6DE;  
 }
 
+form{
+	display:inline;
+}
 .btnPeople { 
     background-image: url(/css/images/people.png);
     background-repeat: no-repeat;
