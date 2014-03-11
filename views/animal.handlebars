@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Characterize It - Animals</title>	
+	<title>Characterize It</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -20,16 +20,35 @@
 	<div class="container">
 			<h2 id="title-1">Emile the erudite rat</h2>
 
-		<button class="btn btn-default get-started" id="6">Start over</button>
+		<button class="btn btn-default get-started" id="6" style="margin-right: 60px">Start over</button>
 		<button class="btn btn-default redirect-animal" id="7">Next!</button>
 
-		<div class="tools">
-		  <a href="#tools_sketch" data-tool="marker">Marker</a>
-		  <a href="#tools_sketch" data-tool="eraser">Eraser</a>
+		<button id="download" style="float: right; width: 70px; height: 70px; margin-left: 60px">
+			<a href="#tools_sketch" data-download="png">
+				<img src="/images/download-icon.png" width="85%" height="75%" alt="Download">
+			</a>
+		</button>
 
-		  <a href="#tools_sketch" data-download="png" style="float: right; width: 100px;">Download</a>
-		  <a href="#tools_sketch" style="float: right; width: 100px;">Share</a>
+		<button id="share" style="float: right; width: 70px; height: 70px;">
+			<a href="#tools_sketch">
+				<img src="/images/share-icon.png" width="85%" height="75%" alt="Share">
+			</a>
+		</button>
+
+		<div class="marker">
+			<button id="marker2" style="width: 70px; height: 70px; margin-top: 20px">
+		  		<a href="#tools_sketch" data-tool="marker">
+		  			<img src = "/images/pencil-icon.png" width="85%" height="75%">
+		  		</a>
+		  	</button><br />
+
+			<button id="eraser2" style="width: 70px; height: 70px; margin-top: 20px">
+		  		<a href="#tools_sketch" data-tool="eraser">
+		  			<img src = "/images/eraser-icon.png" width="75%" height="75%">
+		  		</a>
+		  	</button><br />
 		</div>
+
 		<canvas id="tools_sketch" width="800" height="600" style="background: url(/images/rat.png) no-repeat center center;"></canvas>
 
 		<script type="text/javascript">
@@ -45,4 +64,3 @@
 	</div>
 </body>
 </html>
-

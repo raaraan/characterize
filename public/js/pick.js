@@ -23,17 +23,27 @@ function changeShape(e){
 		case 1:
 			randIntShape = 2;
 			image = "/images/circle.png";
-			title = "Circle";
+			title = "Civil circle";
 			break;
 		case 2:
 			randIntShape = 3;
 			image = "/images/square.png";
-			title = "Serious square";
+			title = "Sassy square";
 			break;
 		case 3:
-			randIntShape = 1;
+			randIntShape = 4;
 			image = "/images/triangle.png";
 			title = "Tipsy triangle";
+			break;
+		case 4:
+			randIntShape = 5;
+			image = "/images/oval.png";
+			title = "Obnoxious oval";
+			break;
+		case 5:
+			randIntShape = 1;
+			image = "/images/isoceles.png";
+			title = "Ignorant isoceles";
 			break;
 	}
 	var canvas = document.getElementById("tools_sketch");
@@ -51,7 +61,7 @@ function changeOther(e){
 		case 1:
 			randIntOther = 2;
 			image = "/images/pumpkin.png";
-			title = "Cyclops";
+			title = "Classy cyclops";
 			break;
 		case 2:
 			randIntOther = 3;
@@ -107,33 +117,28 @@ function changeImage(e){
 	var image;
 	var title;
 	switch(randInt){
-		case 1:
-			randInt = 2;
+		case 5:
+			randInt = 1;
 			image = "/images/girl.png";
 			title = "Aurora";
 			break;
-		case 6:
-		randInt = 1;
+		case 2:
+		randInt = 3;
 			image = "/images/leonardo.png";
 			title = "Deranged da Vinci";
 			break;
 		case 3:
 		randInt = 4;
-			image = "/images/king.png";
-			title = "King";
-			break;
-		case 4:
-		randInt = 5;
 			image = "/images/man.png";
 			title = "Bob the businessman";
 			break;
-		case 5:
-		randInt = 6;
+		case 4:
+		randInt = 5;
 			image = "/images/pirate.png";
 			title = "Pete the pirate";
 			break;
-		case 2:
-		randInt = 3;
+		case 1:
+		randInt = 2;
 			image = "/images/madsci.png";
 			title = "McMillius the mad scientist";
 			break;
